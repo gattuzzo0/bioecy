@@ -22,6 +22,7 @@ export const site = {
     ? `https://wa.me/${phoneDigits}?text=${whatsappText}`
     : "/#contacto",
   address: "Av. 18 de Marzo #210, Col. Jardín, San Luis Potosí, S.L.P.",
+  mapsQuery: "Bioecy, Av. 18 de Marzo 210, Col. Jardín, San Luis Potosí, S.L.P.",
   hours: [
     { days: "Lunes a viernes", time: "8:00 – 20:00" },
     { days: "Sábado", time: "9:00 – 14:00" },
@@ -38,4 +39,5 @@ export const navLinks = [
   { href: "/#suelo-pelvico", label: "Suelo pélvico" },
   { href: "/#clinica", label: "La clínica" },
   { href: "/#contacto", label: "Contacto" },
+  { href: "/#ubicacion", label: "Ubicación" },
 ];

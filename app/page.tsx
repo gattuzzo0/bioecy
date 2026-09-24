@@ -10,6 +10,7 @@ import { SiteHeader } from "@/components/site-header";
 import { ServiceMarquee } from "@/components/service-marquee";
 import { SueloPelvico } from "@/components/suelo-pelvico";
 import { Tecnologias } from "@/components/tecnologias";
+import { Ubicacion } from "@/components/ubicacion";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <SueloPelvico />
         <Clinica />
         <Contacto />
+        <Ubicacion />
       </main>
       <SiteFooter />
     </LogoIntro>

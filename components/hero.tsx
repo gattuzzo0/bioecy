@@ -66,10 +66,6 @@ export function Hero() {
         className="float-y-delay pointer-events-none absolute top-10 -right-24 size-80 rounded-full bg-brand-green/30 blur-3xl"
         aria-hidden
       />
-      <span
-        className="spin-slow pointer-events-none absolute top-28 left-[42%] size-56 rounded-full border border-dashed border-primary/30"
-        aria-hidden
-      />
 
       <div className="relative mx-auto grid max-w-6xl gap-12 px-5 pt-14 pb-20 md:pt-20 lg:grid-cols-12 lg:gap-8">
         <div className="flex flex-col justify-center gap-6 lg:col-span-5">

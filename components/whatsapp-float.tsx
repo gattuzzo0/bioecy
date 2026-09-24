@@ -7,7 +7,7 @@ export function WhatsappFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escribir por WhatsApp"
-      className="relative fixed right-5 bottom-5 z-40 inline-flex size-14 items-center justify-center rounded-full bg-brand-green text-brand-green-foreground shadow-lg transition-transform hover:scale-105 hover:bg-brand-green/90"
+      className="fixed right-5 bottom-5 z-40 inline-flex size-14 items-center justify-center rounded-full bg-brand-green text-brand-green-foreground shadow-lg transition-transform hover:scale-105 hover:bg-brand-green/90"
     >
       <span
         className="ring-pulse pointer-events-none absolute inset-0 rounded-full bg-brand-green"

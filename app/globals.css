@@ -163,16 +163,6 @@
   animation: ken-burns 14s ease-in-out infinite alternate;
 }
 
-@keyframes spin-slow {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.spin-slow {
-  animation: spin-slow 18s linear infinite;
-}
-
 .marquee-track {
   animation: marquee 16s linear infinite;
 }
@@ -203,8 +193,7 @@
   .pulse-dot,
   .ken-burns,
   .marquee-track,
-  .ring-pulse,
-  .spin-slow {
+  .ring-pulse {
     animation: none;
   }
 
