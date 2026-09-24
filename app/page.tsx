@@ -3,6 +3,7 @@ import { Contacto } from "@/components/contacto";
 import { Especialidades } from "@/components/especialidades";
 import { Hero } from "@/components/hero";
 import { Dermatofuncional } from "@/components/dermatofuncional";
+import { LogoIntro } from "@/components/logo-intro";
 import { Nutricion } from "@/components/nutricion";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -11,7 +12,7 @@ import { Tecnologias } from "@/components/tecnologias";
 
 export default function Home() {
   return (
-    <>
+    <LogoIntro>
       <SiteHeader />
       <main>
         <Hero />
@@ -24,6 +25,6 @@ export default function Home() {
         <Contacto />
       </main>
       <SiteFooter />
-    </>
+    </LogoIntro>
   );
 }

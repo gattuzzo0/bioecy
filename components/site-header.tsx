@@ -1,29 +1,32 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
+import { BrandLogo } from "@/components/brand-logo";
+import { useLogoIntro } from "@/components/logo-intro";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { navLinks, site } from "@/lib/site";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const { landed, slotRef } = useLogoIntro();
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background">
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5">
         <Link href="/#inicio" aria-label="Bioecy, ir al inicio">
-          <Image
-            src="/images/logo-bioecy.png"
-            alt=""
-            width={500}
-            height={230}
-            className="h-12 w-auto"
-            priority
-          />
+          {landed ? (
+            <BrandLogo className="h-12" />
+          ) : (
+            <span
+              ref={slotRef}
+              className="block h-12 w-[6.5rem]"
+              aria-hidden
+            />
+          )}
         </Link>
 
         <nav aria-label="Principal" className="hidden md:block">
