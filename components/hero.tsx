@@ -67,7 +67,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-5 pt-14 pb-20 md:pt-20 lg:grid-cols-12 lg:gap-8">
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-12 px-5 pt-14 pb-20 md:pt-20 lg:grid-cols-12 lg:gap-8">
         <div className="flex flex-col justify-center gap-6 lg:col-span-5">
           <motion.p
             className="inline-flex w-fit items-center gap-2 rounded-full bg-background px-4 py-1.5 text-sm font-semibold text-primary shadow-sm"

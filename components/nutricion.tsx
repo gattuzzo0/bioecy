@@ -17,7 +17,7 @@ const items = [
 export function Nutricion() {
   return (
     <section id="nutricion" className="bg-background py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-5 lg:grid-cols-2">
         <Reveal className="group relative aspect-[4/3] overflow-hidden rounded-3xl">
           <Image
             src="/images/nutricion.png"

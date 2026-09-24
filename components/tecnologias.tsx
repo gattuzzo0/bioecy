@@ -41,7 +41,7 @@ export function Tecnologias() {
   return (
     <section id="tecnologias" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-end">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-end">
           <Reveal className="flex flex-col gap-4">
             <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
               Tecnología

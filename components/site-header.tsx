@@ -29,7 +29,7 @@ export function SiteHeader() {
           )}
         </Link>
 
-        <nav aria-label="Principal" className="hidden md:block">
+        <nav aria-label="Principal" className="hidden lg:block">
           <ul className="flex gap-5 text-sm font-semibold text-foreground/80 lg:gap-7">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -50,7 +50,7 @@ export function SiteHeader() {
           rel="noopener noreferrer"
           className={cn(
             buttonVariants(),
-            "hidden h-10 rounded-full px-5 font-semibold md:inline-flex",
+            "hidden h-10 rounded-full px-5 font-semibold lg:inline-flex",
           )}
         >
           Agendar cita
@@ -58,7 +58,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="inline-flex size-10 items-center justify-center rounded-full text-primary md:hidden"
+          className="inline-flex size-10 items-center justify-center rounded-full text-primary lg:hidden"
           aria-expanded={open}
           aria-controls="menu-movil"
           onClick={() => setOpen((value) => !value)}
@@ -77,7 +77,7 @@ export function SiteHeader() {
       <nav
         id="menu-movil"
         aria-label="Móvil"
-        className={cn("border-t bg-background md:hidden", !open && "hidden")}
+        className={cn("border-t bg-background lg:hidden", !open && "hidden")}
       >
         <div className="mx-auto flex max-w-6xl flex-col px-5 py-3">
           {navLinks.map((link) => (

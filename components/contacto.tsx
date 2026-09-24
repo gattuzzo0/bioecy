@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export function Contacto() {
   return (
     <section id="contacto" className="bg-surface py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-5 lg:grid-cols-2">
         <Reveal className="flex flex-col gap-6">
           <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
             Contacto

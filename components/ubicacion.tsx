@@ -54,7 +54,7 @@ export function Ubicacion() {
 
   return (
     <section id="ubicacion" className="bg-background py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-5 lg:grid-cols-5">
         <Reveal className="flex flex-col gap-6 lg:col-span-2">
           <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
             Ubicación

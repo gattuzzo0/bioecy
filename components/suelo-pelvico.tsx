@@ -28,7 +28,7 @@ export function SueloPelvico() {
       id="suelo-pelvico"
       className="bg-primary py-20 text-primary-foreground md:py-28"
     >
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-5 lg:grid-cols-2">
         <Reveal className="group relative aspect-square overflow-hidden rounded-3xl">
           <Image
             src="/images/suelo-pelvico-3.png"

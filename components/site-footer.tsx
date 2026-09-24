@@ -60,10 +60,10 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-col gap-2 border-t py-5 text-xs text-muted-foreground sm:flex-row sm:justify-between">
-          <p>© {year} Bioecy. Todos los derechos reservados.</p>
           <Link href="/aviso-de-privacidad" className="hover:text-primary">
             Aviso de privacidad
           </Link>
+          <p>© {year} Bioecy. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
