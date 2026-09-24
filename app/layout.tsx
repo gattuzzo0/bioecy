@@ -45,6 +45,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="es"
       className={`${quicksand.variable} ${nunito.variable} bg-background`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
+  var nav = performance.getEntriesByType("navigation")[0];
+  if (!nav || nav.type !== "reload") return;
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  function top() { scrollTo(0, 0); }
+  top();
+  addEventListener("load", top);
+})();`,
+          }}
+        />
+      </head>
       <body className="antialiased">
         {children}
         <WhatsappFloat />
