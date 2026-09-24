@@ -4,7 +4,6 @@ const items = [
   "Infrarrojo",
   "Ondas de choque",
   "Nutrición",
-  "Psicología",
   "Suelo pélvico",
   "Dermatofuncional",
 ];

@@ -19,7 +19,7 @@ export function SiteFooter() {
               className="h-16 w-auto"
             />
             <p className="max-w-xs text-sm text-muted-foreground">
-              Fisioterapia, rehabilitación, nutrición y psicología para todas
+              Fisioterapia, rehabilitación, nutrición y dermatofuncional para todas
               las edades.
             </p>
           </div>

@@ -106,7 +106,7 @@ export function Hero() {
           >
             En Bioecy combinamos rehabilitación con tecnología de
             electroterapia, láser, infrarrojo y ondas de choque, junto con
-            nutrición y psicología, para acompañar tu recuperación de forma
+            nutrición y dermatofuncional, para acompañar tu recuperación de forma
             integral.
           </motion.p>
           <motion.div

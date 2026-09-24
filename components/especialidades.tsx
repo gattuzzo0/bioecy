@@ -29,15 +29,15 @@ const specialties = [
     ],
   },
   {
-    src: "/images/psicologia.png",
-    alt: "Sesión de psicología en un consultorio luminoso",
-    title: "Psicología",
-    body: "El dolor y las lesiones también afectan la mente. Te acompañamos en el proceso emocional de tu recuperación.",
+    src: "/images/dermatofuncional-cintura.png",
+    alt: "Aplicación de terapia de reducción de talla en la cintura y la cadera",
+    title: "Dermatofuncional",
+    body: "Reducción de talla y flacidez en cintura y piernas, sin cirugía ni tiempo de baja.",
     items: [
-      "Manejo del dolor crónico",
-      "Ansiedad y estrés",
-      "Acompañamiento en rehabilitación",
-      "Terapia infantil y familiar",
+      "Reducción de talla en cintura",
+      "Reducción de talla en piernas",
+      "Flacidez en cintura y piernas",
+      "Sin cirugía ni tiempo de baja",
     ],
   },
 ];
@@ -51,7 +51,7 @@ export function Especialidades() {
             Especialidades
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
-            Un solo lugar para cuidar cuerpo, alimentación y mente
+            Un solo lugar para cuidar cuerpo, alimentación y figura
           </h2>
           <p className="text-lg leading-relaxed text-pretty text-muted-foreground">
             Nuestros especialistas trabajan en equipo para que tu tratamiento

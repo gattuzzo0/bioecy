@@ -1,6 +1,6 @@
 # Bioecy
 
-Sitio de una página para **Clínica Bioecy** en San Luis Potosí: fisioterapia, rehabilitación, nutrición funcional, dermatofuncional, psicología y terapia de suelo pélvico. Agendar, Llamar y el botón flotante de WhatsApp usan el mismo número de entorno.
+Sitio de una página para **Clínica Bioecy** en San Luis Potosí: fisioterapia, rehabilitación, nutrición funcional, dermatofuncional y terapia de suelo pélvico. Agendar, Llamar y el botón flotante de WhatsApp usan el mismo número de entorno.
 
 ## Capturas
 

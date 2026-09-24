@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 import { site } from "@/lib/site";
 
 const items = [
-  "Radiofrecuencia facial y corporal",
-  "Firmeza y flacidez",
-  "Estimulación de colágeno",
+  "Reducción de talla en cintura",
+  "Reducción de talla en piernas",
+  "Flacidez en cintura y piernas",
   "Sin cirugía ni tiempo de baja",
 ];
 
@@ -20,8 +20,8 @@ export function Dermatofuncional() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-5 lg:grid-cols-2">
         <Reveal className="group relative aspect-[4/3] overflow-hidden rounded-3xl lg:order-2">
           <Image
-            src="/images/belleza-radiofrecuencia.png"
-            alt="Aplicación de radiofrecuencia en el óvalo facial para recuperar firmeza"
+            src="/images/dermatofuncional-cintura.png"
+            alt="Aplicación de terapia de reducción de talla en la cintura y la cadera"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(min-width:1024px) 40vw, 90vw"
@@ -32,12 +32,11 @@ export function Dermatofuncional() {
             Dermatofuncional
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
-            Firmeza de la piel sin cirugía
+            Reducción de talla y flacidez
           </h2>
           <p className="text-lg leading-relaxed text-pretty text-muted-foreground">
-            Recupera la firmeza de tu piel sin cirugías dolorosas. La flacidez
-            aparece cuando las células dejan de producir colágeno y los tejidos
-            pierden soporte.
+            Terapia de reducción de talla y flacidez en cintura y piernas,
+            sin cirugía.
           </p>
           <ul className="flex flex-col gap-2">
             {items.map((line) => (
