@@ -24,7 +24,7 @@ export const site = {
   address: "Av. 18 de Marzo #210, Col. Jardín, San Luis Potosí, S.L.P.",
   mapsQuery: "Bioecy, Av. 18 de Marzo 210, Col. Jardín, San Luis Potosí, S.L.P.",
   hours: [
-    { days: "Lunes a viernes", time: "8:00 – 20:00" },
+    { days: "Lunes a viernes", time: "9:00 – 21:00" },
     { days: "Sábado", time: "9:00 – 14:00" },
   ],
   instagramHref: "https://www.instagram.com/bioecynutricionfuncional/",

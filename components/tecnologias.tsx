@@ -22,7 +22,7 @@ const cards: { icon: LucideIcon; title: string; body: string }[] = [
   {
     icon: Waves,
     title: "Ondas de choque",
-    body: "Pulsos acústicos para tendinopatías, fascitis plantar, calcificaciones y dolor crónico.",
+    body: "Pulsos acústicos con el equipo BTL de onda de choque focal, para tendinopatías, fascitis plantar, calcificaciones y dolor crónico.",
   },
 ];
 
@@ -33,7 +33,7 @@ const photos = [
   },
   {
     src: "/images/tech-shockwave.png",
-    alt: "Terapia de ondas de choque en el tendón de Aquiles",
+    alt: "Equipo BTL de onda de choque focal aplicado en el tendón de Aquiles",
   },
 ];
 

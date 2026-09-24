@@ -17,7 +17,7 @@ const nunito = Nunito_Sans({
 export const metadata: Metadata = {
   title: "Bioecy | Fisioterapia, rehabilitación, nutrición y dermatofuncional",
   description:
-    "Clínica Bioecy: rehabilitación física con electroterapia, láser, infrarrojo y ondas de choque. Nutrición funcional, dermatofuncional y terapia de suelo pélvico para todas las edades.",
+    "Clínica Bioecy: rehabilitación física con electroterapia, láser, infrarrojo y ondas de choque BTL. Nutrición funcional, dermatofuncional y terapia de suelo pélvico para todas las edades.",
   applicationName: "Bioecy",
   appleWebApp: {
     title: "Bioecy",

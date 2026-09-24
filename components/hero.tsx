@@ -76,7 +76,7 @@ export function Hero() {
             transition={{ duration: 0.45 }}
           >
             <span className="pulse-dot size-2 rounded-full bg-brand-green" aria-hidden="true" />
-            Fisioterapia y rehabilitación física
+            Evaluación y nutrición funcional
           </motion.p>
           <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
             {title.map((part, index) => (
@@ -105,7 +105,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.55 }}
           >
             En Bioecy combinamos rehabilitación con tecnología de
-            electroterapia, láser, infrarrojo y ondas de choque, junto con
+            electroterapia, láser, infrarrojo y ondas de choque BTL, junto con
             nutrición y dermatofuncional, para acompañar tu recuperación de forma
             integral.
           </motion.p>

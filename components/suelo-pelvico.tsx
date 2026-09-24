@@ -29,7 +29,7 @@ export function SueloPelvico() {
       className="bg-primary py-20 text-primary-foreground md:py-28"
     >
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-5 lg:grid-cols-2">
-        <Reveal className="group relative aspect-square overflow-hidden rounded-3xl">
+        <Reveal className="group relative aspect-square overflow-hidden rounded-3xl md:w-1/2 md:justify-self-center lg:w-full lg:justify-self-stretch">
           <Image
             src="/images/suelo-pelvico-3.png"
             alt="Paciente vestida en la silla de suelo pélvico, viendo una pantalla en un consultorio privado"

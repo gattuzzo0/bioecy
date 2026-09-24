@@ -17,11 +17,11 @@ const items = [
 export function Dermatofuncional() {
   return (
     <section id="dermatofuncional" className="bg-surface py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-5 lg:grid-cols-2">
-        <Reveal className="group relative aspect-[4/3] overflow-hidden rounded-3xl lg:order-2">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-5 md:grid-cols-2 md:gap-10">
+        <Reveal className="group relative aspect-[4/3] overflow-hidden rounded-3xl md:order-2">
           <Image
-            src="/images/dermatofuncional-cintura.png"
-            alt="Aplicación de terapia de reducción de talla en la cintura y la cadera"
+            src="/images/dermatofuncional-piernas.png"
+            alt="Aplicación de terapia de reducción de talla en el muslo y la pierna"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(min-width:1024px) 40vw, 90vw"
