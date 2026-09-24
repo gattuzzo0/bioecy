@@ -1,5 +1,7 @@
 import { Clock, MapPin, MessageCircle, Phone } from "lucide-react";
 
+import { Reveal } from "@/components/reveal";
+
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { site } from "@/lib/site";
@@ -8,7 +10,7 @@ export function Contacto() {
   return (
     <section id="contacto" className="bg-surface py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-2">
-        <div className="flex flex-col gap-6">
+        <Reveal className="flex flex-col gap-6">
           <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
             Contacto
           </p>
@@ -43,9 +45,10 @@ export function Contacto() {
               Llamar
             </a>
           </div>
-        </div>
+        </Reveal>
 
-        <address className="flex flex-col gap-6 rounded-3xl bg-card p-8 not-italic">
+        <Reveal delay={0.12}>
+        <address className="lift flex flex-col gap-6 rounded-3xl bg-card p-8 not-italic">
           <div className="flex gap-4">
             <MapPin className="mt-0.5 size-5 text-primary" aria-hidden="true" />
             <div>
@@ -82,6 +85,7 @@ export function Contacto() {
             </div>
           </div>
         </address>
+        </Reveal>
       </div>
     </section>
   );

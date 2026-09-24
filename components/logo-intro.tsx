@@ -82,6 +82,18 @@ export function LogoIntro({ children }: { children: ReactNode }) {
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             aria-hidden
           >
+            <motion.span
+              className="pointer-events-none absolute top-1/2 left-1/2 size-56 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary/25 md:size-80"
+              initial={{ scale: 0.4, opacity: 0 }}
+              animate={{ scale: [0.6, 1.15, 0.6], opacity: [0.2, 0.7, 0.2] }}
+              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <motion.span
+              className="pointer-events-none absolute top-1/2 left-1/2 size-36 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-brand-green/50 md:size-52"
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: [1.2, 0.7, 1.2], rotate: 180 }}
+              transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+            />
             <motion.div
               ref={logoRef}
               className={

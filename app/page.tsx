@@ -7,6 +7,7 @@ import { LogoIntro } from "@/components/logo-intro";
 import { Nutricion } from "@/components/nutricion";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { ServiceMarquee } from "@/components/service-marquee";
 import { SueloPelvico } from "@/components/suelo-pelvico";
 import { Tecnologias } from "@/components/tecnologias";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <SiteHeader />
       <main>
         <Hero />
+        <ServiceMarquee />
         <Tecnologias />
         <Especialidades />
         <Nutricion />

@@ -1,4 +1,5 @@
 import { Activity, Sun, Waves, Zap } from "lucide-react";
+import { Reveal } from "@/components/reveal";
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 
@@ -41,31 +42,33 @@ export function Tecnologias() {
     <section id="tecnologias" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-end">
-          <div className="flex flex-col gap-4">
+          <Reveal className="flex flex-col gap-4">
             <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
               Tecnología
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
               Rehabilitación con equipos de fisioterapia avanzada
             </h2>
-          </div>
+          </Reveal>
+          <Reveal delay={0.12}>
           <p className="text-lg leading-relaxed text-pretty text-muted-foreground">
             Cada sesión combina la mano experta del fisioterapeuta con el agente
             físico más adecuado para tu lesión. Así reducimos el dolor desde las
             primeras sesiones y recuperas movilidad de forma segura.
           </p>
+          </Reveal>
         </div>
 
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
           <div className="grid gap-5 sm:grid-cols-2 lg:col-span-2">
-            {cards.map((card) => {
+            {cards.map((card, index) => {
               const Icon = card.icon;
               return (
+                <Reveal key={card.title} delay={index * 0.08}>
                 <article
-                  key={card.title}
-                  className="flex flex-col gap-4 rounded-3xl bg-surface p-7"
+                  className="lift flex h-full flex-col gap-4 rounded-3xl bg-surface p-7"
                 >
-                  <span className="inline-flex size-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
+                  <span className="float-y inline-flex size-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
                     <Icon className="size-6" aria-hidden="true" />
                   </span>
                   <h3 className="text-xl font-bold">{card.title}</h3>
@@ -73,6 +76,7 @@ export function Tecnologias() {
                     {card.body}
                   </p>
                 </article>
+                </Reveal>
               );
             })}
           </div>
@@ -81,13 +85,13 @@ export function Tecnologias() {
             {photos.map((photo) => (
               <figure
                 key={photo.src}
-                className="relative aspect-[4/3] overflow-hidden rounded-3xl lg:aspect-auto lg:min-h-48"
+                className="group relative aspect-[4/3] overflow-hidden rounded-3xl lg:aspect-auto lg:min-h-48"
               >
                 <Image
                   src={photo.src}
                   alt={photo.alt}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(min-width:1024px) 28vw, 90vw"
                 />
               </figure>

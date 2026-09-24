@@ -1,6 +1,8 @@
 import { Check } from "lucide-react";
 import Image from "next/image";
 
+import { Reveal } from "@/components/reveal";
+
 const specialties = [
   {
     src: "/images/hero-young.png",
@@ -44,7 +46,7 @@ export function Especialidades() {
   return (
     <section id="especialidades" className="bg-surface py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
-        <div className="mx-auto flex max-w-2xl flex-col gap-4 text-center">
+        <Reveal className="mx-auto flex max-w-2xl flex-col gap-4 text-center">
           <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
             Especialidades
           </p>
@@ -55,20 +57,20 @@ export function Especialidades() {
             Nuestros especialistas trabajan en equipo para que tu tratamiento
             sea completo y coherente.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {specialties.map((item) => (
+          {specialties.map((item, index) => (
+            <Reveal key={item.title} delay={index * 0.1} className="h-full">
             <article
-              key={item.title}
-              className="flex flex-col overflow-hidden rounded-3xl bg-card"
+              className="lift flex h-full flex-col overflow-hidden rounded-3xl bg-card"
             >
-              <div className="relative aspect-[4/3]">
+              <div className="group relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={item.src}
                   alt={item.alt}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(min-width:768px) 30vw, 90vw"
                 />
               </div>
@@ -91,6 +93,7 @@ export function Especialidades() {
                 </ul>
               </div>
             </article>
+            </Reveal>
           ))}
         </div>
       </div>

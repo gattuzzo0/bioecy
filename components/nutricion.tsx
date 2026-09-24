@@ -1,6 +1,8 @@
 import { Check } from "lucide-react";
 import Image from "next/image";
 
+import { Reveal } from "@/components/reveal";
+
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { site } from "@/lib/site";
@@ -16,16 +18,16 @@ export function Nutricion() {
   return (
     <section id="nutricion" className="bg-background py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+        <Reveal className="group relative aspect-[4/3] overflow-hidden rounded-3xl">
           <Image
             src="/images/nutricion.png"
             alt="Consulta con nutrióloga en la clínica Bioecy"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(min-width:1024px) 40vw, 90vw"
           />
-        </div>
-        <div className="flex flex-col gap-6">
+        </Reveal>
+        <Reveal delay={0.15} className="flex flex-col gap-6">
           <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
             Nutrición
           </p>
@@ -59,7 +61,7 @@ export function Nutricion() {
           >
             Agendar consulta
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

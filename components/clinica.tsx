@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { Reveal } from "@/components/reveal";
+
 const steps = [
   {
     title: "Valoración",
@@ -19,12 +21,12 @@ export function Clinica() {
   return (
     <section id="clinica" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl md:aspect-[21/9]">
+        <Reveal className="group relative aspect-[4/3] overflow-hidden rounded-3xl md:aspect-[21/9]">
           <Image
             src="/images/clinica-2.png"
             alt="Cabina de fisioterapia con una camilla y equipos de electroterapia, láser e infrarrojo"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(min-width:1024px) 72rem, 90vw"
           />
           <div className="absolute inset-x-4 bottom-4 flex flex-wrap gap-3 md:inset-x-auto md:bottom-6 md:left-6">
@@ -33,7 +35,7 @@ export function Clinica() {
               infrarrojo
             </p>
           </div>
-        </div>
+        </Reveal>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-3">
           <div className="flex flex-col gap-4">
@@ -49,9 +51,10 @@ export function Clinica() {
             </p>
           </div>
 
-          <ol className="grid gap-8 sm:grid-cols-3 lg:col-span-2">
+          <div className="grid gap-8 sm:grid-cols-3 lg:col-span-2">
             {steps.map((step, index) => (
-              <li key={step.title} className="border-t-2 border-brand-green pt-5">
+              <Reveal key={step.title} delay={index * 0.1}>
+              <div className="border-t-2 border-brand-green pt-5">
                 <p className="font-heading text-sm font-bold text-primary">
                   Paso {index + 1}
                 </p>
@@ -59,9 +62,10 @@ export function Clinica() {
                 <p className="mt-2 leading-relaxed text-muted-foreground">
                   {step.body}
                 </p>
-              </li>
+              </div>
+              </Reveal>
             ))}
-          </ol>
+          </div>
         </div>
       </div>
     </section>

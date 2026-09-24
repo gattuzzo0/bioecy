@@ -1,6 +1,8 @@
 import { Lock } from "lucide-react";
 import Image from "next/image";
 
+import { Reveal } from "@/components/reveal";
+
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { site } from "@/lib/site";
@@ -27,21 +29,21 @@ export function SueloPelvico() {
       className="bg-primary py-20 text-primary-foreground md:py-28"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2">
-        <div className="relative aspect-square overflow-hidden rounded-3xl">
+        <Reveal className="group relative aspect-square overflow-hidden rounded-3xl">
           <Image
             src="/images/suelo-pelvico-3.png"
             alt="Paciente vestida en la silla de suelo pélvico, viendo una pantalla en un consultorio privado"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(min-width:1024px) 40vw, 90vw"
           />
           <p className="absolute inset-x-4 bottom-4 rounded-2xl bg-background/95 px-5 py-3 font-heading font-bold text-foreground md:inset-x-auto md:bottom-6 md:left-6">
             Espacio <span className="text-primary">privado</span> para suelo
             pélvico
           </p>
-        </div>
+        </Reveal>
 
-        <div className="flex flex-col gap-6">
+        <Reveal delay={0.15} className="flex flex-col gap-6">
           <p className="inline-flex items-center gap-2 font-heading text-sm font-bold tracking-widest text-brand-green uppercase">
             <Lock className="size-4" aria-hidden="true" />
             Tratamiento discreto
@@ -73,7 +75,7 @@ export function SueloPelvico() {
           >
             Solicitar información confidencial
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

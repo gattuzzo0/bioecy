@@ -18,9 +18,19 @@ export const metadata: Metadata = {
   title: "Bioecy | Fisioterapia, rehabilitación, nutrición y psicología",
   description:
     "Clínica Bioecy: rehabilitación física con electroterapia, láser, infrarrojo y ondas de choque. Nutrición funcional, psicología y terapia de suelo pélvico para todas las edades.",
+  applicationName: "Bioecy",
+  appleWebApp: {
+    title: "Bioecy",
+  },
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/images/logo-bioecy.png",
-    apple: "/images/logo-bioecy.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 

@@ -96,12 +96,119 @@
   animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.45);
+    opacity: 0.55;
+  }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes ring-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+.float-y {
+  animation: float-y 5.5s ease-in-out infinite;
+}
+
+.float-y-delay {
+  animation: float-y 6.5s ease-in-out 0.8s infinite;
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+.ken-burns {
+  animation: ken-burns 14s ease-in-out infinite alternate;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+.marquee-track {
+  animation: marquee 16s linear infinite;
+}
+
+.ring-pulse {
+  animation: ring-pulse 2.2s ease-out infinite;
+}
+
+.lift {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+.lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px oklch(0.45 0.17 258 / 0.12);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
-  .rise-in {
+  .rise-in,
+  .float-y,
+  .float-y-delay,
+  .pulse-dot,
+  .ken-burns,
+  .marquee-track,
+  .ring-pulse,
+  .spin-slow {
     animation: none;
+  }
+
+  .lift:hover {
+    transform: none;
   }
 }
