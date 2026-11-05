@@ -2,11 +2,21 @@ import { Check } from "lucide-react";
 import Image from "next/image";
 
 import { Reveal } from "@/components/reveal";
+import { cn } from "@/lib/utils";
 
-const specialties = [
+type Specialty = {
+  src: string;
+  alt: string;
+  title: string;
+  body: string;
+  items: string[];
+  imageClass?: string;
+};
+
+const specialties: Specialty[] = [
   {
-    src: "/images/hero-young.png",
-    alt: "Fisioterapeuta aplicando electrodos a un deportista joven",
+    src: "/images/fisioterapia-rehabilitacion.jpeg",
+    alt: "Fisioterapeuta de Bioecy aplicando un equipo terapéutico en el pie de una paciente",
     title: "Fisioterapia y rehabilitación",
     body: "Nuestro eje principal. Tratamos lesiones musculares, articulares y neurológicas con un plan personalizado.",
     items: [
@@ -17,8 +27,9 @@ const specialties = [
     ],
   },
   {
-    src: "/images/nutricion.png",
-    alt: "Consulta de nutrición funcional en la clínica",
+    src: "/images/nutricion-inbody.jpg",
+    alt: "Reporte InBody de composición corporal",
+    imageClass: "object-top",
     title: "Nutrición funcional",
     body: "Evaluación y planes de alimentación que potencian tu recuperación, tu energía y tu composición corporal.",
     items: [
@@ -70,7 +81,10 @@ export function Especialidades() {
                   src={item.src}
                   alt={item.alt}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className={cn(
+                    "object-cover transition-transform duration-700 group-hover:scale-110",
+                    item.imageClass,
+                  )}
                   sizes="(min-width:768px) 30vw, 90vw"
                 />
               </div>

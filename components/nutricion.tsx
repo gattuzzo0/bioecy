@@ -1,11 +1,34 @@
 import { Check } from "lucide-react";
-import Image from "next/image";
 
+import { PortraitCarousel } from "@/components/clinica-carousel";
 import { Reveal } from "@/components/reveal";
 
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { site } from "@/lib/site";
+
+const photos = [
+  {
+    src: "/images/nutricion/IMG_9142.JPEG",
+    alt: "Consultorio de nutrición con escritorio de vidrio, sillones y la pantalla de Bioecy",
+    caption: "Consulta",
+  },
+  {
+    src: "/images/nutricion/IMG_9143.JPEG",
+    alt: "Área de evaluación corporal con el equipo InBody al fondo del consultorio",
+    caption: "Evaluación",
+  },
+  {
+    src: "/images/nutricion/IMG_9147.JPEG",
+    alt: "Báscula InBody frente al muro de mármol y un espejo con luz",
+    caption: "InBody",
+  },
+  {
+    src: "/images/nutricion/IMG_9146.JPEG",
+    alt: "Equipo InBody de composición corporal sobre una alfombra",
+    caption: "Composición corporal",
+  },
+];
 
 const items = [
   "Evaluación nutricional",
@@ -17,23 +40,20 @@ const items = [
 export function Nutricion() {
   return (
     <section id="nutricion" className="bg-background py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-5 md:grid-cols-2 md:gap-10">
-        <Reveal className="group relative aspect-[3/4] overflow-hidden rounded-3xl bg-card">
-          <Image
-            src="/images/nutricion-inbody.jpg"
-            alt="Resultado de composición corporal InBody de una consulta de nutrición"
-            fill
-            className="object-contain transition-transform duration-700 group-hover:scale-105"
-            sizes="(min-width:1024px) 40vw, 90vw"
-          />
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 lg:grid lg:grid-cols-[20rem_minmax(0,1fr)] lg:items-center lg:gap-16">
+        <Reveal className="order-2 mx-auto w-full max-w-[20rem] lg:order-none lg:col-start-1 lg:row-start-1">
+          <PortraitCarousel photos={photos} label="Fotos de nutrición" />
         </Reveal>
-        <Reveal delay={0.15} className="flex flex-col gap-6">
-          <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
-            Nutrición
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
-            Consulta con nutrióloga
-          </h2>
+        <div className="contents lg:col-start-2 lg:row-start-1 lg:flex lg:flex-col lg:gap-6">
+          <div className="order-1 flex flex-col gap-4 lg:order-none">
+            <p className="font-heading text-sm font-bold tracking-widest text-primary uppercase">
+              Nutrición
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
+              Consulta con nutrióloga
+            </h2>
+          </div>
+          <div className="order-3 flex flex-col gap-6 lg:order-none">
           <p className="text-lg leading-relaxed text-pretty text-muted-foreground">
             Evaluación y planes de alimentación que potencian tu recuperación,
             tu energía y tu composición corporal.
@@ -61,7 +81,8 @@ export function Nutricion() {
           >
             Agendar consulta
           </a>
-        </Reveal>
+          </div>
+        </div>
       </div>
     </section>
   );

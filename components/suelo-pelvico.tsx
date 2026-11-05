@@ -49,7 +49,7 @@ export function SueloPelvico() {
             Tratamiento discreto
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
-            Silla de terapia para suelo pélvico
+            Terapia de silla EMS
           </h2>
           <p className="text-lg leading-relaxed text-pretty text-primary-foreground/85">
             Tecnología de estimulación que trabaja miles de contracciones

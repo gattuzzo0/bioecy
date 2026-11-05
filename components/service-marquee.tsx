@@ -4,7 +4,7 @@ const items = [
   "Infrarrojo",
   "Ondas de choque",
   "Nutrición",
-  "Suelo pélvico",
+  "Terapia de silla EMS",
   "Dermatofuncional",
 ];
 

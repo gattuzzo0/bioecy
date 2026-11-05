@@ -36,7 +36,7 @@ export const navLinks = [
   { href: "/#especialidades", label: "Especialidades" },
   { href: "/#nutricion", label: "Nutrición" },
   { href: "/#dermatofuncional", label: "Dermatofuncional" },
-  { href: "/#suelo-pelvico", label: "Suelo pélvico" },
+  { href: "/#suelo-pelvico", label: "Terapia de silla EMS" },
   { href: "/#clinica", label: "La clínica" },
   { href: "/#contacto", label: "Contacto" },
   { href: "/#ubicacion", label: "Ubicación" },

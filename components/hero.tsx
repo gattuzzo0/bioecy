@@ -21,8 +21,8 @@ const photos = [
     duration: 3.2,
   },
   {
-    src: "/images/hero-young.png",
-    alt: "Deportista joven con electrodos en el hombro durante una sesión de electroterapia",
+    src: "/images/lesion-deportiva.jpeg",
+    alt: "Fisioterapeuta de Bioecy aplicando un equipo terapéutico en el brazo de un paciente",
     age: "24 años",
     note: "Lesión deportiva",
     className: "aspect-[4/5]",
@@ -43,14 +43,11 @@ const photos = [
 ] as const;
 
 const title = [
-  { word: "Vuelve", accent: false },
-  { word: "a", accent: false },
-  { word: "moverte", accent: false },
-  { word: "sin", accent: true },
-  { word: "dolor,", accent: true },
-  { word: "a", accent: false },
-  { word: "cualquier", accent: false },
-  { word: "edad.", accent: false },
+  "Evaluación,",
+  "terapia",
+  "y",
+  "nutrición",
+  "funcional",
 ];
 
 export function Hero() {
@@ -69,23 +66,11 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-12 px-5 pt-14 pb-20 md:pt-20 lg:grid-cols-12 lg:gap-8">
         <div className="flex flex-col justify-center gap-6 lg:col-span-5">
-          <motion.p
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-background px-4 py-1.5 text-sm font-semibold text-primary shadow-sm"
-            initial={reduce ? false : { opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45 }}
-          >
-            <span className="pulse-dot size-2 rounded-full bg-brand-green" aria-hidden="true" />
-            Evaluación y nutrición funcional
-          </motion.p>
           <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            {title.map((part, index) => (
+            {title.map((word, index) => (
               <motion.span
-                key={`${part.word}-${index}`}
-                className={cn(
-                  "mr-[0.28em] inline-block",
-                  part.accent && "text-primary",
-                )}
+                key={`${word}-${index}`}
+                className="mr-[0.28em] inline-block"
                 initial={reduce ? false : { opacity: 0, y: 28 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -94,7 +79,7 @@ export function Hero() {
                   ease: [0.22, 1, 0.36, 1],
                 }}
               >
-                {part.word}
+                {word}
               </motion.span>
             ))}
           </h1>
@@ -106,7 +91,7 @@ export function Hero() {
           >
             En Bioecy combinamos rehabilitación con tecnología de
             electroterapia, láser, infrarrojo y ondas de choque BTL, junto con
-            nutrición y dermatofuncional, para acompañar tu recuperación de forma
+            nutrición y dermatofuncional, para acompañar tu bienestar de forma
             integral.
           </motion.p>
           <motion.div
