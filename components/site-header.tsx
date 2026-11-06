@@ -30,12 +30,12 @@ export function SiteHeader() {
         </Link>
 
         <nav aria-label="Principal" className="hidden lg:block">
-          <ul className="flex gap-5 text-sm font-semibold text-foreground/80 lg:gap-7">
+          <ul className="flex items-center gap-2 text-[13px] font-semibold text-foreground/80 xl:gap-5 xl:text-sm">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="transition-colors hover:text-primary"
+                  className="whitespace-nowrap transition-colors hover:text-primary"
                 >
                   {link.label}
                 </Link>

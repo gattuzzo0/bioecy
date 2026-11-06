@@ -35,6 +35,7 @@ export const navLinks = [
   { href: "/#tecnologias", label: "Tecnologías" },
   { href: "/#especialidades", label: "Especialidades" },
   { href: "/#nutricion", label: "Nutrición" },
+  { href: "/#suplementos", label: "Suplementos" },
   { href: "/#dermatofuncional", label: "Dermatofuncional" },
   { href: "/#suelo-pelvico", label: "Terapia de silla EMS" },
   { href: "/#clinica", label: "La clínica" },

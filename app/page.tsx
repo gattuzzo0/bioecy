@@ -11,6 +11,7 @@ import { ServiceMarquee } from "@/components/service-marquee";
 import { SueloPelvico } from "@/components/suelo-pelvico";
 import { Tecnologias } from "@/components/tecnologias";
 import { Ubicacion } from "@/components/ubicacion";
+import { Vitaminas } from "@/components/vitaminas";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Tecnologias />
         <Especialidades />
         <Nutricion />
+        <Vitaminas />
         <Dermatofuncional />
         <SueloPelvico />
         <Clinica />
