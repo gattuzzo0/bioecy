@@ -40,8 +40,8 @@ const specialties: Specialty[] = [
     ],
   },
   {
-    src: "/images/dermatofuncional-cintura.png",
-    alt: "Aplicación de terapia de reducción de talla en la cintura y la cadera",
+    src: "/images/dermatofuncional-piernas.png",
+    alt: "Aplicación de terapia de reducción de talla en las piernas",
     title: "Dermatofuncional",
     body: "Reducción de talla y flacidez en cintura y piernas, sin cirugía ni tiempo de baja.",
     items: [

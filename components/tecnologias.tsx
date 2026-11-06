@@ -32,8 +32,8 @@ const photos = [
     alt: "Aplicación de láser terapéutico en una rodilla",
   },
   {
-    src: "/images/tech-shockwave.png",
-    alt: "Equipo BTL de onda de choque focal aplicado en el tendón de Aquiles",
+    src: "/images/fisioterapia-rehabilitacion.jpeg",
+    alt: "Fisioterapeuta de Bioecy aplicando el equipo BTL de onda de choque en el pie",
   },
 ];
 
